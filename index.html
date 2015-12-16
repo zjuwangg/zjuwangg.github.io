@@ -213,25 +213,27 @@
 </li>
 <li><p>迭代:</p>
 <ul>
-<li><p><em>如何判断一个对象是否可迭代</em><br>  使用collections模块的Iterable类型判断</p>
-<pre><code>&gt;&gt;&gt; from collections import Iterarble
-&gt;&gt;&gt; isinstance(&apos;abc&apos;,Iterable)                
-</code></pre></li>
-<li><p>list 迭代:</p>
-<pre><code># 不带下表
-for i in range(10)
-    pass
-# 访问对应下标
-for i,value in enumerate([&apos;a&apos;,&apos;b&apos;,&apos;c&apos;]):
-    print i,value
-</code></pre></li>
-<li><p>dict 迭代:  </p>
-<pre><code>d = {&apos;a&apos;:1,&apos;b&apos;:2}
-for key in d:
-    print key + &apos;:&apos; + str(d[key])
-</code></pre></li>
+<li><em>如何判断一个对象是否可迭代</em><br>  使用collections模块的Iterable类型判断</li>
 </ul>
 </li>
+</ul>
+<pre><code>        &gt;&gt;&gt; from collections import Iterarble
+        &gt;&gt;&gt; isinstance(&apos;abc&apos;,Iterable)        
+
+* list 迭代:
+
+        # 不带下表
+        for i in range(10)
+            pass
+        # 访问对应下标
+        for i,value in enumerate([&apos;a&apos;,&apos;b&apos;,&apos;c&apos;]):
+            print i,value
+* dict 迭代:  
+
+        d = {&apos;a&apos;:1,&apos;b&apos;:2}
+        for key in d:
+            print key + &apos;:&apos; + str(d[key])
+</code></pre><ul>
 <li><p>列表生成式:</p>
 </li>
 <li><p>生成器:</p>
