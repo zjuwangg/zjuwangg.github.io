@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://zjuwangg.github.io/"/>
-  <updated>2015-12-16T17:26:42.000Z</updated>
+  <updated>2015-12-17T03:15:26.000Z</updated>
   <id>http://zjuwangg.github.io/</id>
   
   <author>
@@ -19,33 +19,23 @@
     <link href="http://zjuwangg.github.io/2015/12/17/python%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/"/>
     <id>http://zjuwangg.github.io/2015/12/17/python高级特性/</id>
     <published>2015-12-16T16:59:58.000Z</published>
-    <updated>2015-12-16T17:26:42.000Z</updated>
+    <updated>2015-12-17T03:15:26.000Z</updated>
     <content type="html"><![CDATA[<h3 id="u5217_u8868_u64CD_u4F5C_3A"><a href="#u5217_u8868_u64CD_u4F5C_3A" class="headerlink" title="列表操作:"></a>列表操作:</h3><ul>
 <li><p>切片:</p>
 </li>
 <li><p>迭代:</p>
 <ul>
-<li><em>如何判断一个对象是否可迭代</em><br>  使用collections模块的Iterable类型判断</li>
-</ul>
+<li><p>如何判断一个对象是否可迭代<br>使用collections模块的Iterable类型判断</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> Iterarble</span><br><span class="line">isinstance(<span class="string">'abc'</span>,Iterable)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>list 迭代:    </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 不带下表</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>)</span><br><span class="line">	<span class="keyword">pass</span></span><br><span class="line"><span class="comment"># 访问对应下标</span></span><br><span class="line"><span class="keyword">for</span> i,value <span class="keyword">in</span> enumerate([<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>]):</span><br><span class="line">	<span class="keyword">print</span> i,value</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>dict 迭代:  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d = &#123;<span class="string">'a'</span>:<span class="number">1</span>,<span class="string">'b'</span>:<span class="number">2</span>&#125;</span><br><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> d:</span><br><span class="line">	<span class="keyword">print</span> key + <span class="string">':'</span> + str(d[key])</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<pre><code>        &gt;&gt;&gt; from collections import Iterarble
-        &gt;&gt;&gt; isinstance(&apos;abc&apos;,Iterable)        
-
-* list 迭代:
-
-        # 不带下表
-        for i in range(10)
-            pass
-        # 访问对应下标
-        for i,value in enumerate([&apos;a&apos;,&apos;b&apos;,&apos;c&apos;]):
-            print i,value
-* dict 迭代:  
-
-        d = {&apos;a&apos;:1,&apos;b&apos;:2}
-        for key in d:
-            print key + &apos;:&apos; + str(d[key])
-</code></pre><ul>
+</li>
 <li><p>列表生成式:</p>
 </li>
 <li><p>生成器:</p>
@@ -67,23 +57,17 @@
 </ul>
 </li>
 <li><p>匿名函数(lambda):</p>
-<pre><code>lambda x,y:x+y
-</code></pre></li>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">lambda</span> x,y:x+y</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>装饰器:</p>
 <blockquote>
 <p>代码运行期间动态增加功能,类似java Spring中AOP的功能</p>
 </blockquote>
-<pre><code>def log(func):
-    def wraaper(*args,**kw):
-        print &apos;call %s()&apos; % func.__name__
-        return wraaper
-    return wrapper
-
-@log
-def now():
-    print &apos;2015-12-09&apos;
-</code></pre><p>  相当于执行 <code>now = log(now)</code>  也就是说现在的now指向了一个新的封装后的函数</p>
 </li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">log</span><span class="params">(func)</span>:</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">wraaper</span><span class="params">(*args,**kw)</span>:</span></span><br><span class="line">		<span class="keyword">print</span> <span class="string">'call %s()'</span> % func.__name__</span><br><span class="line">		<span class="keyword">return</span> wraaper</span><br><span class="line">	<span class="keyword">return</span> wrapper</span><br><span class="line">	</span><br><span class="line"><span class="decorator">@log</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">now</span><span class="params">()</span>:</span></span><br><span class="line">	<span class="keyword">print</span> <span class="string">'2015-12-09'</span></span><br></pre></td></tr></table></figure>
+<p>相当于执行 <code>now = log(now)</code>  也就是说现在的now指向了一个新的封装后的函数</p>
+<ul>
 <li><p>偏函数:</p>
 <ul>
 <li>functools.partial 的内置函数,相当于利用了返回函数的闭包和类装饰模式的原理来固定函数的参数</li>
