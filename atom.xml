@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Terry1897's blog]]></title>
+  <title><![CDATA[Terry Go Go!]]></title>
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://zjuwangg.github.io/"/>
-  <updated>2015-12-17T03:15:26.000Z</updated>
+  <updated>2015-12-28T16:45:35.000Z</updated>
   <id>http://zjuwangg.github.io/</id>
   
   <author>
@@ -15,12 +15,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[2015年末总结]]></title>
+    <link href="http://zjuwangg.github.io/2015/12/29/2015%E5%B9%B4%E6%9C%AB%E6%80%BB%E7%BB%93/"/>
+    <id>http://zjuwangg.github.io/2015/12/29/2015年末总结/</id>
+    <published>2015-12-28T16:42:43.000Z</published>
+    <updated>2015-12-28T16:45:35.000Z</updated>
+    <content type="html"><![CDATA[<p>　　本周内填坑，今天太晚了，先去睡觉。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>　　本周内填坑，今天太晚了，先去睡觉。</p>
+]]>
+    </summary>
+    
+      <category term="反思" scheme="http://zjuwangg.github.io/tags/%E5%8F%8D%E6%80%9D/"/>
+    
+      <category term="成长" scheme="http://zjuwangg.github.io/tags/%E6%88%90%E9%95%BF/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[python高级特性(待补充)]]></title>
     <link href="http://zjuwangg.github.io/2015/12/17/python%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/"/>
     <id>http://zjuwangg.github.io/2015/12/17/python高级特性/</id>
     <published>2015-12-16T16:59:58.000Z</published>
-    <updated>2015-12-17T03:15:26.000Z</updated>
-    <content type="html"><![CDATA[<h3 id="u5217_u8868_u64CD_u4F5C_3A"><a href="#u5217_u8868_u64CD_u4F5C_3A" class="headerlink" title="列表操作:"></a>列表操作:</h3><ul>
+    <updated>2015-12-28T16:44:06.000Z</updated>
+    <content type="html"><![CDATA[<p>　　断断续续接触python也有半年了，因为使用场景有限，大多止步与写个方便工作的脚本或者利用scrapy框架写写简单的爬虫。最近着重学习了python一些高阶的属性，将这些特性和简单的操作示例记录下来，一来作为温习，二为防止将来遗忘可做参考。<br>　　先列下提纲，慢慢填坑。。。</p>
+<a id="more"></a> 
+<h4 id="u5217_u8868_u64CD_u4F5C_3A"><a href="#u5217_u8868_u64CD_u4F5C_3A" class="headerlink" title="列表操作:"></a>列表操作:</h4><ul>
 <li><p>切片:</p>
 </li>
 <li><p>迭代:</p>
@@ -41,7 +62,7 @@
 <li><p>生成器:</p>
 </li>
 </ul>
-<h3 id="u51FD_u6570_u5F0F_u7F16_u7A0B_3A"><a href="#u51FD_u6570_u5F0F_u7F16_u7A0B_3A" class="headerlink" title="函数式编程:"></a>函数式编程:</h3><ul>
+<h4 id="u51FD_u6570_u5F0F_u7F16_u7A0B_3A"><a href="#u51FD_u6570_u5F0F_u7F16_u7A0B_3A" class="headerlink" title="函数式编程:"></a>函数式编程:</h4><ul>
 <li><p>高阶函数:</p>
 <ul>
 <li>map</li>
@@ -80,7 +101,7 @@
 </ul>
 </li>
 <li>使用@property<ul>
-<li>s</li>
+<li></li>
 </ul>
 </li>
 <li>多重继承</li>
@@ -94,8 +115,8 @@
 <p><a href="http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/0014186131194415d50558b7a1c424f9fb52b84dc9c965c000" target="_blank" rel="external">参考链接:</a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h3 id="u5217_u8868_u64CD_u4F5C_3A"><a href="#u5217_u8868_u64CD_u4F5C_3A" class="headerlink" title="列表操作:"></a>列表操作:</h3><ul>
-<li><p>切片:</p>]]>
+    <![CDATA[<p>　　断断续续接触python也有半年了，因为使用场景有限，大多止步与写个方便工作的脚本或者利用scrapy框架写写简单的爬虫。最近着重学习了python一些高阶的属性，将这些特性和简单的操作示例记录下来，一来作为温习，二为防止将来遗忘可做参考。<br>　　先列下提纲，慢慢填坑。。。</p>]]>
+    
     </summary>
     
       <category term="python" scheme="http://zjuwangg.github.io/tags/python/"/>
